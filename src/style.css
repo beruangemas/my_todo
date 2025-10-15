@@ -34,3 +34,7 @@ footer{
     padding: 5px;
     border-bottom: 1px solid #ccc; /* Optional: adds a line between tasks */
 }
+
+button{
+    text-decoration: none;
+}
