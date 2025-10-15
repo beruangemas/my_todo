@@ -7,10 +7,6 @@ function addTask() {
     const input = document.getElementById("task-input");
     const taskText = input.value.trim();
 
-    if(taskText !==""){
-        const input = document.getElementById("task-input");
-        const taskText = input.value.trim();
-
         if(taskText !==""){
             renderTask(taskText, false);
             saveTask(taskText, false);
@@ -19,7 +15,8 @@ function addTask() {
         } else{
             alert("Please enter a task.");
         }
-};
+    }
+
 
 //render task
 function renderTask(text, completed){
@@ -32,8 +29,8 @@ function renderTask(text, completed){
     checkbox.onclick = function(){
         li.style.textDecoration = this.checked ? "line-through" : "none";
         updateTask(text, this.checked);
-    }
-};
+    };
+
 
 //create text node
     const textNode = document.createTextNode(" " + text);
@@ -52,7 +49,7 @@ function renderTask(text, completed){
 
 //append checkbox and text to li
     li.appendChild(checkbox);
-    li.appendChild(text);
+    li.appendChild(textNode);
     li.appendChild(deleteBtn);
     li.style.textDecoration = completed ? "line-through" : "none";
 
