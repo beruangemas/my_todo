@@ -29,3 +29,6 @@ Future improvements
 Update 16 Nov 2025:
 >> Refactor the code so that Delete button does not get cross out when a task was completed.
 >> Add event listener: pressing Enter key to add task.
+
+Update 29 Nov 2025:
+>> Add timestamp functionality (created, updated, completed)
