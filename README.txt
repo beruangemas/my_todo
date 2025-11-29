@@ -25,3 +25,7 @@ Future improvements
 >> Implement categories or tags
 >> Add due dates and reminders
 >> Sync tasks across devices using cloud storage 
+
+Update 16 Nov 2025:
+>> Refactor the code so that Delete button does not get cross out when a task was completed.
+>> Add event listener: pressing Enter key to add task.
